@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    ul{ list-style-type: none;}
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Personal information</legend>
+      <ul>
+        <li>
+        <label for="fname">Full Name</label>
+        <input type="text" name="fullnam" id="fname" required>
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </li>
+        <li>
+          <label for="adress">Home Address</label>
+          <input type="text" name="address" id="address" maxlength="">
+        </li>
+        <li>
+          <label for="telephone">Phone</label>
+          <input type="tel" name="tel" id="telephone" placeholder="080*******" required>
+        </li>
+        <li>
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="Date of Birth">
+
+        </li>
+      </ul>
+      <fieldset>
+        <legend>other information</legend>
+        <ul>
+          <li>
+           <h3>gender </h3>
+            <label for="male">male</label>
+            <input type="radio" name="gd" id="male"> <br>
+            <label for="female">female</label>
+            <input type="radio" name="gd" id="female"checked>        
+          </li>
+          <li>
+           <h3> marital status</h3>
+            <label for="sig">single</label>
+            <input type="radio" name="mar" id="sig"> <br>
+            <label for="marr">married</label>
+            <input type="radio" name="mar" id="marr" checked> <br>
+            <label for="div">divorced</label>
+            <input type="radio" name="mar" id="div"> <br>
+            <label for="win">widowed</label>
+            <input type="radio" name="mar" id="win"> <br>
+          </li>
+          <li>
+            <h3>State of Origin</h3>
+            <select>
+              <optgroup label="South East">
+                <option value="se">select your state</option>
+                <option value="Se"></option>
+                <option value="En">Enugu</option>
+                <option value="Ab">Abia</option>
+                <option value="Imo">Imo</option>
+                <option value="Ebo">Ebonyi</option>
+              </optgroup>
+            
+              <optgroup label="South West">
+                <option value="On">Ondo</option>
+                <option value="La">Lagos</option>
+                <option value="Oy">Oyo</option>
+                <option value="Os">Osun</option>
+                <option value="Kw">Kwara</option>
+                <option value="Og">Ogun</option>
+              </optgroup>
+            </select>
+          </li>
+          <li>
+            <label for="upload">upload files</label>
+            <input type="file" name="upload" id="upload" multiple accept="image" >
+          </li>
+          <li><label for="Stack">Stack</label>
+             <label for="angular"></label>
+          </li>
+          <li>
+            <label for="desc">Describe yourself</label>
+            <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+    </fieldset>
+  </form>
+</body>
+</html>
